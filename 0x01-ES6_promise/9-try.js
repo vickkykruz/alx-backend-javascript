@@ -5,7 +5,7 @@ export default function guardrail(mathFunction) {
     queue.push(result);
     // eslint-disable-next-line no-unused-vars
   } catch (error) {
-    queue.push(error.message);
+    queue.push(`Error: ${error.message}`);
   } finally {
     queue.push('Guardrail was processed');
   }
