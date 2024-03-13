@@ -30,3 +30,16 @@ const director1: Directors = {
 };
 
 console.log(director1);
+
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+// Implement the printTeacher function
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  const firstInitial = firstName.charAt(0); // Get the first letter of the firstName
+  return `${firstInitial}. ${lastName}`; // Concatenate the first initial with the lastName
+};
+
+// Test the printTeacher function
+console.log(printTeacher("John", "Doe"));
