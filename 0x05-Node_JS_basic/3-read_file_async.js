@@ -33,6 +33,6 @@ function countStudents(path) {
       return resolve();
     });
   });
-};
+}
 
 module.exports = countStudents;
