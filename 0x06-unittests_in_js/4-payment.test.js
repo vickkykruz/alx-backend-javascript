@@ -12,10 +12,10 @@ describe('Stubs', () => {
 
     sendPaymentRequestToApi(100, 20);
 
-    expect(spyUtils.calledOnceWithExactly('SUM', 100, 20)).to.be.true;
-    expect(spyConsole.calledOnceWithExactly('The total is: 130')).to.be.true;
+    expect(stubUtils.calledOnceWithExactly('SUM', 100, 20)).to.be.true;
+    expect(spyConsole.calledOnceWithExactly('The total is: 10')).to.be.true;
 
-    spyUtils.restore();
+    stubUtils.restore();
     spyConsole.restore();
   });
 });
